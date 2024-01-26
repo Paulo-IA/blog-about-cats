@@ -178,6 +178,15 @@ aside .related-articles {
   line-height: 160%;
 }
 
+/* footer */
+footer {
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 600;
+  text-align: center;
+  padding: 1.6rem;
+}
+
 /* responsividade */
 
 @media (min-width: 1024px) {
