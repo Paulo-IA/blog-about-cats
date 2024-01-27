@@ -137,6 +137,9 @@ main img {
 .article-button-wrapper button.dislike:hover {
   animation: hoverdislike 0.2s forwards ease;
 }
+.article-button-wrapper button.dislike:hover > img {
+  animation: thumbsdown 0.2s forwards ease;
+}
 
 .article-button-wrapper button:focus {
   outline: 2px solid rgba(0, 0, 0, 0.4);
@@ -289,17 +292,25 @@ footer {
 @keyframes hoverlike {
   100% {
     background-color: #039487;
+    transform: scale(1.2);
   }
 }
 
 @keyframes hoverdislike {
   100% {
     background-color: #ed4337;
+    transform: scale(1.2);
   }
 }
 
 @keyframes thumbsup {
   100% {
-    transform: translateY(-0.4rem) rotate(12deg) scale(1.2);
+    transform: translateY(-0.2rem) rotate(-12deg) scale(1.1);
+  }
+}
+
+@keyframes thumbsdown {
+  100% {
+    transform: translateY(0.2rem) rotate(12deg) scale(1.1);
   }
 }
