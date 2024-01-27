@@ -21,165 +21,172 @@
     <div id="page">
       <!-- header -->
       <header>
-        <div id="logo"><img src="./assets/logo.svg" alt="Logo" /></div>
-        <form>
-          <input
-            type="search"
-            id="article-title"
-            placeholder="Pesquise por artigos"
+        <div class="header container">
+          <div id="logo"><img src="./assets/logo.svg" alt="Logo" /></div>
+          <form>
+            <input
+              type="search"
+              id="article-title"
+              placeholder="Pesquise por artigos"
+            />
+          </form>
+          <img
+            src="https://randomuser.me/api/portraits/women/8.jpg"
+            alt="Foto de perfil"
+            class="profile-img"
           />
-        </form>
-        <img
-          src="https://randomuser.me/api/portraits/women/8.jpg"
-          alt="Foto de perfil"
-          class="profile-img"
-        />
+        </div>
       </header>
 
-      <!-- main -->
-      <main>
-        <img
-          src="./assets/main-img.jpeg"
-          alt="Silhueta de um gato em um ambiente externo"
-        />
+      <div class="main container">
+        <!-- main -->
+        <main>
+          <img
+            src="./assets/main-img.jpeg"
+            alt="Silhueta de um gato em um ambiente externo"
+          />
 
-        <div class="article-content">
-          <h1>Seriam os gatos astronautas?</h1>
-          <div class="article-button-wrapper">
-            <button>
-              <img src="./assets/thumbs-up.svg" alt="Gostei" />
-            </button>
+          <div class="article-content">
+            <div class="article-header">
+              <h1>Seriam os gatos astronautas?</h1>
+              <div class="article-button-wrapper">
+                <button class="like">
+                  <img src="./assets/thumbs-up.svg" alt="Gostei" />
+                </button>
 
-            <button>
-              <img src="./assets/thumbs-down.svg" alt="Não gostei" />
-            </button>
+                <button class="dislike">
+                  <img src="./assets/thumbs-down.svg" alt="Não gostei" />
+                </button>
+              </div>
+            </div>
+            <div class="article-paragraphs"></div>
+
+            <p>
+              Os gatos são animais fascinantes e cercados de mistérios. De
+              temperamento independente e misterioso, esses felinos são
+              conhecidos por sua agilidade, elegância e um comportamento muitas
+              vezes imprevisível. Contudo, recentemente, uma teoria tem ganhado
+              espaço na internet e entre teóricos de conspiração: seriam os
+              gatos astronautas?
+            </p>
+            <p>
+              A teoria sugere que os gatos não são animais terrestres, mas sim
+              seres extraterrestres enviados para realizar uma missão específica
+              em nosso planeta. Há relatos históricos que apontam para o fato de
+              que os gatos eram considerados seres sagrados em diferentes
+              culturas e até mesmo associados a figuras divinas. Isso poderia
+              indicar que os gatos têm uma origem muito mais mística do que se
+              pensava anteriormente. Além disso, há teóricos que acreditam que
+              os felinos possuem habilidades telepáticas e são capazes de se
+              comunicar com outras espécies alienígenas. Essa crença baseia-se
+              em relatos de pessoas que afirmam terem visto gatos reagindo a
+              estímulos que não são perceptíveis aos seres humanos, ou até mesmo
+              se comportando de maneira incomum durante eventos astronômicos,
+              como uma aurora boreal. Esses e outros indícios foram
+              interpretados como sinais de que os gatos seriam seres
+              interplanetários.
+            </p>
+            <br />
+            <p>
+              Além disso, há teóricos que acreditam que os felinos possuem
+              habilidades telepáticas e são capazes de se comunicar com outras
+              espécies alienígenas. Essa crença baseia-se em relatos de pessoas
+              que afirmam terem visto gatos reagindo a estímulos que não são
+              perceptíveis aos seres humanos, ou até mesmo se comportando de
+              maneira incomum durante eventos astronômicos, como uma aurora
+              boreal. Esses e outros indícios foram interpretados como sinais de
+              que os gatos seriam seres interplanetários.
+            </p>
           </div>
-          <div class="article-paragraphs"></div>
+        </main>
 
-          <p>
-            Os gatos são animais fascinantes e cercados de mistérios. De
-            temperamento independente e misterioso, esses felinos são conhecidos
-            por sua agilidade, elegância e um comportamento muitas vezes
-            imprevisível. Contudo, recentemente, uma teoria tem ganhado espaço
-            na internet e entre teóricos de conspiração: seriam os gatos
-            astronautas?
-          </p>
-          <p>
-            A teoria sugere que os gatos não são animais terrestres, mas sim
-            seres extraterrestres enviados para realizar uma missão específica
-            em nosso planeta. Há relatos históricos que apontam para o fato de
-            que os gatos eram considerados seres sagrados em diferentes culturas
-            e até mesmo associados a figuras divinas. Isso poderia indicar que
-            os gatos têm uma origem muito mais mística do que se pensava
-            anteriormente. Além disso, há teóricos que acreditam que os felinos
-            possuem habilidades telepáticas e são capazes de se comunicar com
-            outras espécies alienígenas. Essa crença baseia-se em relatos de
-            pessoas que afirmam terem visto gatos reagindo a estímulos que não
-            são perceptíveis aos seres humanos, ou até mesmo se comportando de
-            maneira incomum durante eventos astronômicos, como uma aurora
-            boreal. Esses e outros indícios foram interpretados como sinais de
-            que os gatos seriam seres interplanetários.
-          </p>
-          <br />
-          <p>
-            Além disso, há teóricos que acreditam que os felinos possuem
-            habilidades telepáticas e são capazes de se comunicar com outras
-            espécies alienígenas. Essa crença baseia-se em relatos de pessoas
-            que afirmam terem visto gatos reagindo a estímulos que não são
-            perceptíveis aos seres humanos, ou até mesmo se comportando de
-            maneira incomum durante eventos astronômicos, como uma aurora
-            boreal. Esses e outros indícios foram interpretados como sinais de
-            que os gatos seriam seres interplanetários.
-          </p>
-        </div>
-      </main>
+        <!-- aside -->
+        <aside>
+          <h2>Artigos relacionados</h2>
 
-      <!-- aside -->
-      <aside>
-        <h2>Artigos relacionados</h2>
+          <div class="related-articles">
+            <figure>
+              <div class="related-article-img">
+                <img
+                  src="./assets/article-01.jpeg"
+                  alt="Gato do artigo relacionado 1"
+                />
+              </div>
+              <figcaption>
+                <h3>Sábado preguiçoso</h3>
+                <p>
+                  Descubra atividades interessantes para fazer com seu pet
+                  durante os finais de semana.
+                </p>
+              </figcaption>
+            </figure>
 
-        <div class="related-articles">
-          <figure>
-            <div class="related-article-img">
-              <img
-                src="./assets/article-01.jpeg"
-                alt="Gato do artigo relacionado 1"
-              />
-            </div>
-            <figcaption>
-              <h3>Sábado preguiçoso</h3>
-              <p>
-                Descubra atividades interessantes para fazer com seu pet durante
-                os finais de semana.
-              </p>
-            </figcaption>
-          </figure>
+            <figure>
+              <div class="related-article-img">
+                <img
+                  src="./assets/article-02.jpeg"
+                  alt="Gato do artigo relacionado 1"
+                />
+              </div>
+              <figcaption>
+                <h3>Balaio de gatos</h3>
+                <p>
+                  Como evitar confusões entre seus gatíneos e acostumá-los desde
+                  filhotes.
+                </p>
+              </figcaption>
+            </figure>
 
-          <figure>
-            <div class="related-article-img">
-              <img
-                src="./assets/article-02.jpeg"
-                alt="Gato do artigo relacionado 1"
-              />
-            </div>
-            <figcaption>
-              <h3>Balaio de gatos</h3>
-              <p>
-                Como evitar confusões entre seus gatíneos e acostumá-los desde
-                filhotes.
-              </p>
-            </figcaption>
-          </figure>
+            <figure>
+              <div class="related-article-img">
+                <img
+                  src="./assets/article-03.jpeg"
+                  alt="Gato do artigo relacionado 1"
+                />
+              </div>
+              <figcaption>
+                <h3>Cartela de cores</h3>
+                <p>
+                  Seu gato é inverno intenso? Verão profundo? Descubra as cores
+                  que mais combinam com seu bichano.
+                </p>
+              </figcaption>
+            </figure>
 
-          <figure>
-            <div class="related-article-img">
-              <img
-                src="./assets/article-03.jpeg"
-                alt="Gato do artigo relacionado 1"
-              />
-            </div>
-            <figcaption>
-              <h3>Cartela de cores</h3>
-              <p>
-                Seu gato é inverno intenso? Verão profundo? Descubra as cores
-                que mais combinam com seu bichano.
-              </p>
-            </figcaption>
-          </figure>
+            <figure>
+              <div class="related-article-img">
+                <img
+                  src="./assets/article-04.jpeg"
+                  alt="Gato do artigo relacionado 1"
+                />
+              </div>
+              <figcaption>
+                <h3>Os gatos sentem frio?</h3>
+                <p>
+                  Preparem-se para a frente fria que vem para o país da melhor
+                  maneira possível.
+                </p>
+              </figcaption>
+            </figure>
 
-          <figure>
-            <div class="related-article-img">
-              <img
-                src="./assets/article-04.jpeg"
-                alt="Gato do artigo relacionado 1"
-              />
-            </div>
-            <figcaption>
-              <h3>Os gatos sentem frio?</h3>
-              <p>
-                Preparem-se para a frente fria que vem para o país da melhor
-                maneira possível.
-              </p>
-            </figcaption>
-          </figure>
-
-          <figure>
-            <div class="related-article-img">
-              <img
-                src="./assets/article-05.jpeg"
-                alt="Gato do artigo relacionado 1"
-              />
-            </div>
-            <figcaption>
-              <h3>Conheça o Moacir</h3>
-              <p>
-                Moacir é o gatinho da semana do nosso blog. Venha conhecer sua
-                história de superação.
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-      </aside>
+            <figure>
+              <div class="related-article-img">
+                <img
+                  src="./assets/article-05.jpeg"
+                  alt="Gato do artigo relacionado 1"
+                />
+              </div>
+              <figcaption>
+                <h3>Conheça o Moacir</h3>
+                <p>
+                  Moacir é o gatinho da semana do nosso blog. Venha conhecer sua
+                  história de superação.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </aside>
+      </div>
 
       <!-- footer -->
       <footer>&copy; 2023 - Rocketseat Explorer</footer>
