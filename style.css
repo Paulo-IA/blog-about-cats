@@ -15,6 +15,8 @@
   --blue: #387e96;
   --background-input: rgba(255, 255, 255, 0.2);
   --white-background: #f4fcff;
+
+  --animation-delay: 0.4s;
 }
 
 body,
@@ -168,6 +170,11 @@ aside .related-articles {
   gap: 1.6rem;
 
   align-items: center;
+
+  opacity: 0;
+
+  animation: rtol 1s ease forwards;
+  animation-delay: var(--animation-delay);
 }
 
 .related-article-img {
@@ -289,6 +296,8 @@ footer {
   }
 }
 
+/* Animações */
+
 @keyframes hoverlike {
   100% {
     background-color: #039487;
@@ -312,5 +321,16 @@ footer {
 @keyframes thumbsdown {
   100% {
     transform: translateY(0.2rem) rotate(12deg) scale(1.1);
+  }
+}
+
+@keyframes rtol {
+  0% {
+    margin-left: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
   }
 }
